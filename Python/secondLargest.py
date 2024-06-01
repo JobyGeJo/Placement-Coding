@@ -1,4 +1,4 @@
-numbers = [1, 2, 3, 3, 4, 5, 2, 7, 3, 8]
+numbers = [1, 2, 3, 3, 4, 5, 2, 7, 3, 8, 8]
 max1 = 0
 max2 = -1
 
@@ -8,7 +8,7 @@ for n in numbers:
         max2 = max1
         max1 = n
 
-    elif n > max2:
+    elif n > max2 and n != max1:
         max2 = n
 
 print(max2)
